@@ -1,0 +1,40 @@
+.recent_orders {
+    margin-top: 2rem;
+
+    & > h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    table {
+        background: var(--color-white);
+        width: 100%;
+        border-radius: var(--card-border-radius);
+        padding: var(--card-padding);
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        & > tbody > tr {
+            &:last-child > td {
+                border: none;
+            }
+
+            & > td {
+                height: 2.8rem;
+                border-bottom: 1px solid var(--color-light);
+                color: var(--color-dark-variant);
+            }
+        }
+    }
+
+    & > a {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary);
+    }
+}

@@ -1,0 +1,59 @@
+.container {
+    width: 94%;
+    grid-template-columns: 7rem auto 23rem;
+
+    aside {
+        .logo {
+            h2 {
+                display: none;
+            }
+        }
+
+        .sidebar {
+            h3 {
+                display: none;
+            }
+
+            & > a {
+                width: 5.6rem;
+
+                &:nth-child(5) {
+                    gap: 0.4rem;
+                }
+                &:last-child {
+                    position: relative;
+                    margin-top: 1.8rem;
+                }
+            }
+        }
+    }
+
+    main {
+        .insights {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        .recent_orders {
+            width: 94%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 4rem 0 0 5.8rem;
+
+            table {
+                width: 83vw;
+
+                thead > tr > th:first-child,
+                thead > tr > th:last-child {
+                    display: none;
+                }
+
+                tbody > tr > th:first-child,
+                tbody > tr > th:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}

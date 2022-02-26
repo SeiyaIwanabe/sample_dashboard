@@ -1,0 +1,65 @@
+.sales-analytics {
+    margin-top: 2rem;
+
+    & > h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    .item {
+        background: var(--color-white);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.7rem;
+        padding: 1.4rem var(--card-padding);
+        border-radius: var(--border-radius-3);
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        &.offline > .icon {
+            background: var(--color-danger);
+        }
+        &.customers > .icon {
+            background: var(--color-success);
+        }
+
+        .icon {
+            padding: 0.6rem;
+            color: var(--color-white);
+            border-radius: 50%;
+            background: var(--color-primary);
+            display: flex;
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+
+    .add-product {
+        background: transparent;
+        border: 2px dashed var(--color-primary);
+        color: var(--color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+
+            & > h3 {
+                font-weight: 600;
+            }
+        }
+    }
+}

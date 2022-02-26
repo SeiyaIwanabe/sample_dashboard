@@ -1,0 +1,15 @@
+@import './modules/base';
+@import './modules/aside';
+@import './modules/main';
+@import './modules/recent_order';
+@import './modules/_right';
+@import './modules/sales_analytics';
+
+/**************  media query  *******************/
+@media (max-width: 1200px) {
+    @import './mediaQuery/mw-1200';
+}
+
+@media (max-width: 768px) {
+    @import './mediaQuery/mw-768';
+}
