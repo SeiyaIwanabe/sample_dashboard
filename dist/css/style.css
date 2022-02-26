@@ -180,7 +180,7 @@ aside {
 
 main {
   margin-top: 1.4rem; }
-  main > .filter {
+  main .filter {
     display: none;
     position: fixed;
     top: 0;
